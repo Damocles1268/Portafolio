@@ -1,0 +1,163 @@
+/*Las imagenes con dimensiones diferentes por defecto afectan la visualizacion por mejorar poco
+posicion del nav no fija a menos que se logre una forma de degradado que èrmioya no ver sobreposicion
+*/
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main{
+    width: 100%;
+    height: 100%;
+    margin-top: 45px;
+}
+header {
+    /*background: rgba(0,0,0,0.9);*/
+    display: flex;
+    margin: -45px 0 10px 0;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 100;
+    background: red;
+    
+  }
+#logo{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 80px;
+}
+  #menuStart{
+   font-size: 1em;
+   font-family: 'Times New Roman', Times, serif;
+   color: black;
+   margin: 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+nav ul li{
+    margin: 55px 20px 5px 15px;
+}
+nav ul li:hover{
+    /*background: red;*/
+    color:  darkgreen;
+    /* Cursor pointer dibuja la mano del cursor al pasar por el menu*/
+    cursor: pointer;
+}
+
+/*contenedor de la foto de perfil y la descripcion*/
+#profile{
+    margin: 5px 0 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    background: yellow;
+}
+
+#imgProfile{
+    background: red;
+    margin: 10px 10px 20px 10px;
+    max-width: 30%;
+    border-radius: 25px 15px 25px 15px;
+}
+  /*La descipcion debe ser hijo de profile*/
+#descripcion{
+    margin-top: 30px;
+    width: 50%;
+    margin-left: 10%;
+    background: #ce8888;
+    height: auto;
+}
+#descripcion h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2vw;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ;
+}
+#descripcion p{
+    margin-top: 10px;
+    font-size: 1.3vmax;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    padding-left: 1.5%;
+}
+.ability{
+    border: 1px solid black;
+    
+}
+.ability h1{
+    text-align: center;
+    font-size: 1.5vw;
+    color: blueviolet;
+    
+}
+.AbilityDiv{
+    display: flex;
+   
+    
+}
+.logos{
+    
+    align-content: space-around; 
+    margin: 15px;
+    border: 1px solid red;
+    
+}
+/*contenedor de los proyectos se empleara para crear una presentacion deslizante*/
+.sectionProyects{
+    clear: both;
+    width: 100%;
+    background: aquamarine;
+    /*margin: 20px 5px 10px 10px;  */
+    /*formas de mover los elementos con flex*/
+    display: flex;
+    flex-direction: row;
+    /* hace que se respete las dimensiones que 
+    se designan a a lo que esta en su interior*/
+    /*flex-wrap: wrap;*/
+    /*posicionar elementos 2 lineas usar aling-contents tiene las misma propiedades*/
+    /*justify-content: space-around;
+    align-items: center; 
+    */
+    /*para que lo que esta en el interior ocupe todo el height*/
+    /*align-items: stretch;*/
+}   
+.ProyectsPresentacion{
+    margin: 20px 10px 20px 10px;
+    width: 30%;
+    height: 30%;
+    background: #ce8888;
+    /*hace que ocupe el 100% del contenedor*/
+    /*flex-grow: 1;*/
+    /*para obligar a ocupar el espacio que se defina*/
+    /*flex-shrink: 0;*/
+    /*flex 1 1 auto para crezcan dinamicamente*/
+    flex: 1 1 auto;
+}
+.imgProyects{
+    width: 100%;
+    height: 90%;
+}
+header, footer{
+    background: powderblue;
+    color: black;
+    text-align: center;
+}
+footer{
+    clear: both;
+}
+/*
+usar para el nav max.withd para no dejarlo aumentar mucho
+
+*/
